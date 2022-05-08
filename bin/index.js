@@ -3,7 +3,7 @@ const program = require('commander');
 const json = require('../package.json');
 const axios = require('axios');
 const color = require('colors-cli');
-const module = require('../key');
+const mod = require('../key');
 
 program.version(json.version);
 
@@ -15,7 +15,7 @@ program.command('showlist').action(()=>{
         params: {term: `${searchVal}`, locale: 'en-US', offset: '0', limit: '5'},
         headers: {
           'X-RapidAPI-Host': 'shazam.p.rapidapi.com',
-          'X-RapidAPI-Key': `${module.key}`
+          'X-RapidAPI-Key': `${mod.key}`
         }
       };
       
