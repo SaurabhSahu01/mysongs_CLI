@@ -15,7 +15,7 @@ program.command('showlist').action(()=>{
         params: {term: `${searchVal}`, locale: 'en-US', offset: '0', limit: '5'},
         headers: {
           'X-RapidAPI-Host': 'shazam.p.rapidapi.com',
-          'X-RapidAPI-Key': `${mod.key}`
+          'X-RapidAPI-Key': '28d650c3f5mshbada86932d263d4p17604ajsncf6fc384286e'
         }
       };
       
