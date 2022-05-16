@@ -3,7 +3,6 @@ const program = require('commander');
 const json = require('../package.json');
 const axios = require('axios');
 const color = require('colors-cli');
-const mod = require('../key');
 
 program.version(json.version);
 
